@@ -15,20 +15,22 @@ set $down j
 set $up k
 set $right l
 
-set $wallpaper ~/Pictures/mac/Desert.jpg
+set $wallpaper ~/Pictures/bg.jpg
 
 smart_gaps on
 gaps inner 9px
+
+focus_follows_mouse always
+mouse_warping container
 
 default_border pixel 0
 
 ### Output configuration
 #
 output * bg $wallpaper fill
-# output * $wallpaper fill
 
 # Natural scroll on touchpad
-input "2:14:ETPS/2_Elantech_Touchpad" {
+input "*" {
   natural_scroll enabled
 }
 
@@ -65,6 +67,7 @@ input "2:14:ETPS/2_Elantech_Touchpad" {
 
     # browser
     bindsym $mod+b exec $BROWSER
+    bindsym $mod+Shift+b exec $BROWSER2
 
     # kill focused window
     bindsym $mod+w kill
@@ -145,8 +148,10 @@ input "2:14:ETPS/2_Elantech_Touchpad" {
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+Shift+u splith
-    bindsym $mod+Shift+i splitv
+    # new windows to the right
+    bindsym $mod+r splith
+    # new windows under
+    bindsym $mod+u splitv
 
     # Switch the current container between different layout styles
     # bindsym $mod+s layout stacking
