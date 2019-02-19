@@ -4,11 +4,14 @@ source $HOME/.config/nvim/plugged.vim
 " Line numbers
 set number
 
+" colorscheme
+colorscheme monokai
+
+" line wrapping off
+set nowrap
+
 " Text width
 set textwidth=80
-
-" Color scheme
-colorscheme nord
 
 " Disable Scrolling
 set mouse=nvi
@@ -32,7 +35,11 @@ let mapleader = ","
 " Normal maps
   nmap <Leader>w :write<Enter>
   nmap <A-Space> :write<Enter>
+
+  " Quitting
   nmap <Leader>q :quit<Enter>
+  nmap <Leader>q :quit<Enter>
+  nmap q :quit<Enter>
 
   " Make Y behave like C and D
   nmap Y y$

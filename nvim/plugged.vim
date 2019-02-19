@@ -8,6 +8,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   let g:airline_left_sep = ''
   let g:airline_right_sep = ''
 
+  Plug 'leafgarland/typescript-vim'
+
   " Select airline theme
   Plug 'vim-airline/vim-airline-themes'
   let g:airline_theme = 'murmur'
@@ -28,14 +30,14 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'neomake/neomake'
     " Build tex
     let g:neomake_tex_enabled_makers  = ['pdflatex']
+    let g:neomake_haskell_enabled_makers = ['hlint']
 
   " surround thing with other things
   Plug 'tpope/vim-surround'
 
   " Colorscheme
-  Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.8.0' }
+  Plug 'sickill/vim-monokai'
 
-  " Move between panes
-  Plug 'christoomey/vim-tmux-navigator'
+  Plug 'koryschneider/vim-trim'
 
 call plug#end()
