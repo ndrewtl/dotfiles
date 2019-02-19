@@ -4,8 +4,11 @@ export XDG_DATA_HOME=$HOME/.local/share
 
 # Additional Paths
 MYBINS_PATH=$HOME/.bin
-YARN_PATH=$XDG_DATA_HOME/yarn/bin
-export PATH=$PATH:$MYBINS_PATH:$YARN_PATH
+YARN_PATH=$HOME/.yarn/bin
+SNAP_PATH=/var/lib/snapd/snap/bin
+GHCUP_PATH=$HOME/.ghcup/bin
+CABAL_PATH=$HOME/.cabal/bin
+export PATH=$PATH:$MYBINS_PATH:$CABAL_PATH:$GHCUP_PATH:$YARN_PATH:$SNAP_PATH
 
 # keyboard layout
 export XKB_DEFAULT_LAYOUT=us

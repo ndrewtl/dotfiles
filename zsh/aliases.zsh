@@ -14,8 +14,11 @@ alias se=sudoedit
 alias p=$PACKAGER
 alias sp='sudo $PACKAGER'
 alias z=zathura
+alias fp=flatpak
+alias sfp=flatpak
 
 # Use colors for these things
 alias ls='ls --color'
 alias less='less -R'
 alias tree='tree -C'
+alias ssh-login='eval `ssh-agent` && ssh-add'
