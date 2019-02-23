@@ -22,3 +22,4 @@ alias ls='ls --color'
 alias less='less -R'
 alias tree='tree -C'
 alias ssh-login='eval `ssh-agent` && ssh-add'
+alias open=xdg-open
