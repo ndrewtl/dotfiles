@@ -9,6 +9,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   let g:airline_right_sep = ''
 
   Plug 'leafgarland/typescript-vim'
+  Plug 'kchmck/vim-coffee-script'
 
   " Select airline theme
   Plug 'vim-airline/vim-airline-themes'
@@ -29,13 +30,14 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Build things
   Plug 'neomake/neomake'
     " Build tex
-    let g:neomake_haskell_enabled_makers = ['hlint']
+    let g:neomake_tex_enabled_makers = ['lacheck']
 
   " surround thing with other things
   Plug 'tpope/vim-surround'
 
   " Colorscheme
   Plug 'sickill/vim-monokai'
+  Plug 'flazz/vim-colorschemes'
 
   Plug 'koryschneider/vim-trim'
 
