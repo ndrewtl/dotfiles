@@ -40,6 +40,8 @@ let mapleader = ","
   nmap <Leader>q :quit<Enter>
   nmap <Leader>q :quit<Enter>
   nmap q :quit<Enter>
+  " I use this key by mistake a lot
+  nmap . <nop>
 
   " Make Y behave like C and D
   nmap Y y$
