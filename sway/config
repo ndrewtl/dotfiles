@@ -15,7 +15,8 @@ set $down j
 set $up k
 set $right l
 
-set $wallpaper ~/Pictures/bg.jpg
+# Requires gnome wallpapers
+set $wallpaper /usr/share/backgrounds/gnome/RainDrops.jpg
 
 smart_gaps on
 gaps inner 9px
@@ -26,7 +27,7 @@ mouse_warping container
 default_border pixel 0
 
 ### Output configuration
-#
+# Requires gnome-backgrounds
 output * bg $wallpaper fill
 
 # Natural scroll on touchpad
