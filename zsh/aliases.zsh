@@ -16,6 +16,7 @@ alias sp='sudo $PACKAGER'
 alias z=zathura
 alias fp=flatpak
 alias sfp=flatpak
+alias q=exit
 
 # Use colors for these things
 alias ls='ls --color'
