@@ -19,7 +19,11 @@ alias sfp=flatpak
 alias q=exit
 
 # Use colors for these things
-alias ls='ls --color'
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  alias ls='ls -G'      # mac:   BSD userland
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  alias ls='ls --color' # linux: GNU coreutils
+fi
 alias less='less -R'
 alias tree='tree -C'
 alias ssh-login='eval `ssh-agent` && ssh-add'
