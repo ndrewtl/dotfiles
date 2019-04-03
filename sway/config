@@ -114,10 +114,10 @@ input "*" {
 # Workspaces:
 #
     # switch to workspace
-    bindsym $mod+a workspace alpha
-    bindsym $mod+s workspace sigma
-    bindsym $mod+d workspace delta
-    bindsym $mod+f workspace phi
+    bindsym $mod+a workspace "alpha"
+    bindsym $mod+s workspace "sigma"
+    bindsym $mod+d workspace "delta"
+    bindsym $mod+f workspace " phi "
 
     bindsym $mod+5 workspace 5
     bindsym $mod+6 workspace 6
