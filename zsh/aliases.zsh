@@ -28,6 +28,7 @@ alias less='less -R'
 alias tree='tree -C'
 alias ssh-login='eval `ssh-agent` && ssh-add'
 alias open=xdg-open
+alias pass=gopass # use gopass as pass replacement
 
 # For mac: brew cask
 alias cask='brew cask'
