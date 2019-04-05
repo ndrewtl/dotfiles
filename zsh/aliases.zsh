@@ -5,6 +5,7 @@ alias display='xrandr --output HDMI1 --auto'
 
 # shorten expressvpn service
 alias vpn=expressvpn
+
 # Honestly these two always get mixed up in my head
 alias pgp=gpg
 
@@ -13,6 +14,7 @@ alias e=$EDITOR
 alias se=sudoedit
 alias p=$PACKAGER
 alias sp='sudo $PACKAGER'
+alias mkdirp='mkdir -p'
 
 # Use colors for these things
 if [[ "$OSTYPE" == "darwin"* ]]; then
