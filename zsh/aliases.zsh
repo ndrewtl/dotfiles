@@ -13,10 +13,6 @@ alias e=$EDITOR
 alias se=sudoedit
 alias p=$PACKAGER
 alias sp='sudo $PACKAGER'
-alias z=zathura
-alias fp=flatpak
-alias sfp=flatpak
-alias q=exit
 
 # Use colors for these things
 if [[ "$OSTYPE" == "darwin"* ]]; then
