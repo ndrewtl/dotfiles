@@ -1,7 +1,3 @@
-# Environment variables
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_DATA_HOME=$HOME/.local/share
-
 # Additional Paths
 MYBINS_PATH=$HOME/.bin
 YARN_PATH=$HOME/.yarn/bin
@@ -17,9 +13,6 @@ export XKB_DEFAULT_OPTIONS=caps:swapescape
 # GPG
 export GPG_TTY=`tty`
 
-# Wallpapers dir
-export WALLPAPER_HOME=~/Pictures/wallpapers
-
-source $ZDOTDIR/applications.sh
-source $ZDOTDIR/aliases.sh
+source $XDG_CONFIG_HOME/sh/applications.sh
+source $XDG_CONFIG_HOME/sh/aliases.sh
 source $ZDOTDIR/prompt.sh
