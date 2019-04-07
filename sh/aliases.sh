@@ -1,7 +1,5 @@
 # Abstract out commands
 alias reload='exec $SHELL'
-alias wallpaper='feh --randomize --bg-fill $WALLPAPER_PATH'
-alias display='xrandr --output HDMI1 --auto'
 
 # shorten expressvpn service
 alias vpn=expressvpn
