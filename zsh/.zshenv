@@ -20,6 +20,6 @@ export GPG_TTY=`tty`
 # Wallpapers dir
 export WALLPAPER_HOME=~/Pictures/wallpapers
 
-source $ZDOTDIR/applications.zsh
-source $ZDOTDIR/aliases.zsh
-source $ZDOTDIR/prompt.zsh
+source $ZDOTDIR/applications.sh
+source $ZDOTDIR/aliases.sh
+source $ZDOTDIR/prompt.sh
