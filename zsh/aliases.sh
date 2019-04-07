@@ -12,8 +12,8 @@ alias pgp=gpg
 # Shorten things I do a lot
 alias e=$EDITOR
 alias se=sudoedit
-alias p=$PACKAGER
-alias sp='sudo $PACKAGER'
+alias p=pacman
+alias sp='sudo pacman'
 alias mkdirp='mkdir -p'
 
 # Use colors for these things
