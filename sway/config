@@ -126,10 +126,10 @@ input "*" {
     bindsym $mod+9 workspace 9
     bindsym $mod+0 workspace 10
     # move focused container to workspace
-    bindsym $mod+Shift+a move container to workspace alpha
-    bindsym $mod+Shift+s move container to workspace sigma
-    bindsym $mod+Shift+d move container to workspace delta
-    bindsym $mod+Shift+f move container to workspace phi
+    bindsym $mod+Shift+a move container to workspace "alpha"
+    bindsym $mod+Shift+s move container to workspace "sigma"
+    bindsym $mod+Shift+d move container to workspace "delta"
+    bindsym $mod+Shift+f move container to workspace " phi "
 
     bindsym $mod+Shift+1 move container to workspace 1
     bindsym $mod+Shift+2 move container to workspace 2
