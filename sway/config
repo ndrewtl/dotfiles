@@ -214,6 +214,6 @@ bar {
 }
 
 # Start variety, if it is installed
-exec 'which variety > /dev/null && XDG_CURRENT_DESKTOP=sway variety'
+exec 'which variety > /dev/null && variety'
 
 include /etc/sway/config.d/*
