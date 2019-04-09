@@ -121,7 +121,7 @@ input "*" {
     bindsym $mod+Shift+a move container to workspace "1: alpha"
     bindsym $mod+Shift+s move container to workspace "2: sigma"
     bindsym $mod+Shift+d move container to workspace "3: delta"
-    bindsym $mod+Shift+f move container to workspace "4: phi  "
+    bindsym $mod+Shift+f move container to workspace "4:  phi "
     bindsym $mod+Shift+m move container to workspace "5: music"
 
 
