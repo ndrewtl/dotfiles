@@ -22,6 +22,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   " gc<motion> for comment
   Plug 'tomtom/tcomment_vim'
 
+  " Trim files
+  Plug 'koryschneider/vim-trim'
 
   " " LaTeX
   " Plug 'vim-latex/vim-latex'
