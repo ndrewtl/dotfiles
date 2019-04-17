@@ -5,7 +5,7 @@ source $HOME/.config/nvim/plugged.vim
 set number
 
 " colorscheme
-colorscheme tender
+colorscheme evening
 
 " line wrapping off
 set nowrap
