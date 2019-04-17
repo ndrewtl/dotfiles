@@ -40,6 +40,10 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -1%
 bindsym XF86MonBrightnessUp   exec light -A 1
 bindsym XF86MonBrightnessDown exec light -U 1
 
+# Start variety, if it is installed
+exec 'which variety > /dev/null && variety'
+# And bind a key to switch wallpaper
+bindsym $mod+n exec "variety -n"
 
 #
 # Example configuration:
@@ -208,8 +212,5 @@ bar {
     # font-family: monospace;
     swaybar_command waybar
 }
-
-# Start variety, if it is installed
-exec 'which variety > /dev/null && variety'
 
 include /etc/sway/config.d/*
