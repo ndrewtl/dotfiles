@@ -35,6 +35,8 @@ function ensure_command_exists() {
   command_exists $1 || fail "$1 is not installed"
 }
 
+basedir=$HOME/.config
+
 # Enforce requirements
 echo 'Checking dependencies...'
 ensure_command_exists git
@@ -45,8 +47,8 @@ cd $HOME
 
 # Clone configs
 echo 'Cloning configuration repo...'
-backup_if_exists '.config'
-git clone https://github.com/ndrewtl/dotfiles.git .config
+backup_if_exists $basedir
+git clone https://github.com/ndrewtl/dotfiles.git $basedir
 
 # Setup shell
 echo 'Setting up shell...'
@@ -54,12 +56,12 @@ if [[ $SHELL == /bin/bash ]]; then
   echo 'Bash detected'
   echo 'Writing .bashrc...'
   backup_if_exists .bashrc
-  cp $HOME/.config/bash/.bashrc .
+  cp $basedir/bash/.bashrc .
 elif [[ $SHELL == /bin/zsh ]]; then
   echo 'zsh detected'
   echo 'writing .zshrc...'
   backup_if_exists .zshrc
-  cp $HOME/.config/zsh/.zshrc .
+  cp $basedir/zsh/.zshrc
 else
   echo 'generic shell detected, no shell setup available'
 fi
