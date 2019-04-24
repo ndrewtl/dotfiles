@@ -38,8 +38,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'tpope/vim-surround'
 
   " Colorscheme
-  Plug 'sickill/vim-monokai'
-  Plug 'flazz/vim-colorschemes'
+  Plug 'dikiaap/minimalist'
 
   Plug 'koryschneider/vim-trim'
 
