@@ -52,12 +52,12 @@ git clone https://github.com/ndrewtl/dotfiles.git $basedir
 
 # Setup shell
 echo 'Setting up shell...'
-if [[ $SHELL == /bin/bash ]]; then
+if [ $SHELL == /bin/bash ]; then
   echo 'Bash detected'
   echo 'Writing .bashrc...'
   backup_if_exists .bashrc
   cp $basedir/bash/.bashrc .
-elif [[ $SHELL == /bin/zsh ]]; then
+elif [ $SHELL == /bin/zsh ]; then
   echo 'zsh detected'
   echo 'writing .zshrc...'
   backup_if_exists .zshrc
@@ -67,8 +67,8 @@ else
 fi
 
 # Setup vim
-if command_exists nvim then
+if command_exists nvim; then
   echo 'Setting up nvim'
-elif command_exists vim then
+elif command_exists vim; then
   echo 'Setting up vim'
 fi
