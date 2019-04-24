@@ -16,7 +16,7 @@ backup() {
 
 # Backup a file, if it exists
 backup_if_exists() {
-  [[ -e $1 ]] && backup $1
+  [ -e $1 ] && backup $1
 }
 
 # Check if we have the given command
@@ -52,34 +52,41 @@ git clone https://github.com/ndrewtl/dotfiles.git $basedir
 
 # Setup shell
 echo 'Setting up shell...'
-if [ $SHELL == /bin/bash ]; then
-  echo 'Bash detected'
-  backup_if_exists .bashrc
-  echo 'Writing .bashrc...'
-  ln --symbolic --verbose $basedir/bash/.bashrc .
-elif [ $SHELL == /bin/zsh ]; then
-  echo 'zsh detected'
-  backup_if_exists .zshrc
-  echo 'writing .zshrc...'
-  ln --symbolic --verbose $basedir/zsh/.zshrc .
-else
-  echo 'generic shell detected, no shell setup available'
-fi
+case $SHELL in
+  '/bin/bash')
+    echo 'Bash detected'
+    backup_if_exists .bashrc
+    echo 'Writing .bashrc...'
+    ln --symbolic --verbose $basedir/bash/.bashrc .
+    ;;
+  '/bin/zsh')
+    echo 'zsh detected'
+    backup_if_exists .zshrc
+    echo 'writing .zshrc...'
+    ln --symbolic --verbose $basedir/zsh/.zshrc .
+    ;;
+  *)
+    echo "No config available for shell '$SHELL'"
+    ;;
+esac
 
-# Setup vim
-if [ $EDITOR == nvim ]; then
-  echo 'Setting up nvim...'
-  echo 'Installing vim-plug...'
-  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-elif [ $EDITOR == vim ]; then
-  echo 'Setting up vim...'
-  echo 'Installing vim-plug...'
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-  echo 'Linking vimrc file...'
-  ln --symbolic --verbose $basedir/vim/.vimrc .
-else
-  echo "No config available for $EDITOR"
-fi
+# Setup editor
+case $EDITOR in
+  nvim)
+    echo 'Setting up nvim...'
+    echo 'Installing vim-plug...'
+    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    ;;
+  vim)
+    echo 'Setting up vim...'
+    echo 'Installing vim-plug...'
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    echo 'Linking vimrc file...'
+    ln --symbolic --verbose $basedir/vim/.vimrc .
+    ;;
+  *)
+    echo "No config available for editor '$EDITOR'"
+    ;;
+esac
