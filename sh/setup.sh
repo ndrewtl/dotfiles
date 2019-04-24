@@ -54,21 +54,32 @@ git clone https://github.com/ndrewtl/dotfiles.git $basedir
 echo 'Setting up shell...'
 if [ $SHELL == /bin/bash ]; then
   echo 'Bash detected'
-  echo 'Writing .bashrc...'
   backup_if_exists .bashrc
-  cp $basedir/bash/.bashrc .
+  echo 'Writing .bashrc...'
+  ln --symbolic --verbose $basedir/bash/.bashrc .
 elif [ $SHELL == /bin/zsh ]; then
   echo 'zsh detected'
-  echo 'writing .zshrc...'
   backup_if_exists .zshrc
-  cp $basedir/zsh/.zshrc .
+  echo 'writing .zshrc...'
+  ln --symbolic --verbose $basedir/zsh/.zshrc .
 else
   echo 'generic shell detected, no shell setup available'
 fi
 
 # Setup vim
-if command_exists nvim; then
-  echo 'Setting up nvim'
-elif command_exists vim; then
-  echo 'Setting up vim'
+if [ $EDITOR == nvim ]; then
+  echo 'Setting up nvim...'
+  echo 'Installing vim-plug...'
+  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+elif [ $EDITOR == vim ]; then
+  echo 'Setting up vim...'
+  echo 'Installing vim-plug...'
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+  echo 'Linking vimrc file...'
+  ln --symbolic --verbose $basedir/vim/.vimrc .
+else
+  echo "No config available for $EDITOR"
 fi
