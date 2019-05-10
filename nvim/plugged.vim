@@ -1,6 +1,8 @@
 " Andy Lee's vim plugins
 
 call plug#begin('~/.local/share/nvim/plugged')
+  " .editorconfig support
+  Plug 'editorconfig/editorconfig-vim'
 
   " Airline -> status bar
   Plug 'vim-airline/vim-airline'
