@@ -1,6 +1,11 @@
 " Andy Lee's vim plugins
 
 call plug#begin('~/.local/share/nvim/plugged')
+
+  " Make vim word motions better
+  Plug 'chaoren/vim-wordmotion'
+  let g:wordmotion_prefix = ''
+
   " .editorconfig support
   Plug 'editorconfig/editorconfig-vim'
 
