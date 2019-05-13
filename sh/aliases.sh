@@ -11,6 +11,7 @@ alias pgp=gpg
 alias e=$EDITOR
 alias se=sudoedit
 alias p=pacman
+alias q=exit
 alias sp='sudo pacman'
 alias mkdirp='mkdir -p'
 
