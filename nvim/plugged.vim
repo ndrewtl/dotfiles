@@ -15,16 +15,13 @@ call plug#begin('~/.local/share/nvim/plugged')
   let g:airline_left_sep = ''
   let g:airline_right_sep = ''
 
+  " Languages
   Plug 'leafgarland/typescript-vim'
   Plug 'kchmck/vim-coffee-script'
 
   " Select airline theme
   Plug 'vim-airline/vim-airline-themes'
   let g:airline_theme = 'murmur'
-
-  " Tree display for files
-  Plug 'scrooloose/nerdtree'
-  let NERDTreeShowHidden=1
 
   " gc<motion> for comment
   Plug 'tomtom/tcomment_vim'

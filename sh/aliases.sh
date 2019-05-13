@@ -13,6 +13,7 @@ alias se=sudoedit
 alias p=pacman
 alias q=exit
 alias sp='sudo pacman'
+alias q=exit
 alias mkdirp='mkdir -p'
 
 # Use colors for these things
