@@ -15,6 +15,10 @@ call plug#begin('~/.local/share/nvim/plugged')
   " surround thing with other things
   Plug 'tpope/vim-surround'
 
+  " FZF file navigation
+  Plug '/usr/bin/fzf'
+  Plug 'junegunn/fzf.vim'
+
   " Airline -> status bar
   " TODO implement your own status bar
   Plug 'vim-airline/vim-airline'
@@ -45,6 +49,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Colorscheme
   Plug 'NLKNguyen/papercolor-theme'
 
+  " Misc
   Plug 'koryschneider/vim-trim'
 
 call plug#end()

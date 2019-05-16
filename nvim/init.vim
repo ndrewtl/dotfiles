@@ -27,7 +27,7 @@ set smartindent
 
 " Folding
 " set foldmethod=indent
-" Automatically copy shit I yank in vim
+" Automatically copy what I yank in vim
 set clipboard=unnamed
 
 " Define leader key
@@ -43,6 +43,7 @@ let mapleader = ","
   nmap q :quit<Enter>
   " I use this key by mistake a lot
   nmap . <nop>
+  nmap <Leader>f :GFiles<Enter>
 
   " Make Y behave like C and D
   nmap Y y$
