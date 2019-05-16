@@ -41,8 +41,8 @@ let mapleader = ","
   nmap <Leader>q :quit<Enter>
   nmap <Leader>q :quit<Enter>
   nmap q :quit<Enter>
-  " I use this key by mistake a lot
-  nmap . <nop>
+
+  " use FZF for exploring files
   nmap <Leader>f :GFiles<Enter>
 
   " Make Y behave like C and D
