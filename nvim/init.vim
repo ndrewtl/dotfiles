@@ -52,8 +52,6 @@ let mapleader = ","
   nmap <Leader>R :source $HOME/.config/nvim/init.vim<Enter>
   " Clear search
   nmap <Leader>h :nohlsearch<Enter>
-  " Show file tree
-  nmap <Leader>t :NERDTreeToggle<Enter>
   " Alias to make quickly
   nmap <Leader>m :Neomake<Enter>
 
