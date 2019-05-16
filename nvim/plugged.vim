@@ -43,7 +43,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     let g:neomake_tex_enabled_makers = ['lacheck']
 
   " Colorscheme
-  Plug 'dikiaap/minimalist'
+  Plug 'NLKNguyen/papercolor-theme'
 
   Plug 'koryschneider/vim-trim'
 

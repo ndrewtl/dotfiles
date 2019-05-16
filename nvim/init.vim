@@ -4,8 +4,9 @@ source $HOME/.config/nvim/plugged.vim
 " Line numbers
 set number
 
-" colorscheme
-colorscheme minimalist
+set t_Co=256
+set background=dark
+colorscheme PaperColor
 
 " line wrapping off
 set nowrap
