@@ -42,6 +42,15 @@ bindsym XF86MonBrightnessDown exec light -U 1
 
 # Start variety, if it is installed
 exec 'which variety > /dev/null && variety'
+
+# Lock after 8 minutes,
+# Sleep after 10,
+# Lock before sleeping
+exec swayidle -w \
+  timeout 480 'swaylock' \
+  timeout 600 'systemctl suspend' \
+  before-sleep 'swaylock'
+
 # And bind a key to switch wallpaper
 bindsym $mod+n exec "variety -n"
 
