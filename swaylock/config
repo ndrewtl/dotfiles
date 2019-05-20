@@ -1,0 +1,5 @@
+# run in the background
+daemonize
+# we get the last line of the variety command,
+# which is the image path, ignoring the 'already running' message
+image=$(variety --get | tail -n 1)
