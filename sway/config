@@ -41,12 +41,12 @@ bindsym XF86MonBrightnessUp   exec light -A 1
 bindsym XF86MonBrightnessDown exec light -U 1
 
 # Start variety, if it is installed
-exec 'which variety > /dev/null && variety'
+exec_always 'variety -n'
 
 # Lock after 8 minutes,
 # Sleep after 10,
 # Lock before sleeping
-exec swayidle -w \
+exec_always swayidle -w \
   timeout 480 'swaylock' \
   timeout 600 'systemctl suspend' \
   before-sleep 'swaylock'
