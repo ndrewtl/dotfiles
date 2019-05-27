@@ -54,8 +54,6 @@ let mapleader = ","
   nmap <Leader>R :source $HOME/.config/nvim/init.vim<Enter>
   " Clear search
   nmap <Leader>h :nohlsearch<Enter>
-  " Alias to make quickly
-  nmap <Leader>m :Neomake<Enter>
 
 
 "\Normal maps

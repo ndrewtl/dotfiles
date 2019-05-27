@@ -41,11 +41,6 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Plug 'vim-latex/vim-latex'
   Plug 'lervag/vimtex'
 
-  " Build things
-  Plug 'neomake/neomake'
-    " Build tex
-    let g:neomake_tex_enabled_makers = ['lacheck']
-
   " Colorscheme
   Plug 'NLKNguyen/papercolor-theme'
 
