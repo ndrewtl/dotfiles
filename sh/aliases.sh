@@ -16,6 +16,8 @@ alias q=exit
 alias sp='sudo pacman'
 alias q=exit
 alias mkdirp='mkdir -p'
+# Jump to project root
+alias cdr='cd $(git rev-parse --show-toplevel)'
 
 # Use colors for these things
 if [[ "$OSTYPE" == "darwin"* ]]; then
