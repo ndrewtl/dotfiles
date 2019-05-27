@@ -8,7 +8,7 @@ command_exists() {
 export BROWSER=firefox
 export BROWSER2=chromium
 export LAUNCHER='rofi -show run'
-export TERMINAL='kitty --single-instance'
+export TERMINAL=alacritty
 export PASSWORD_MANAGER=gopass
 
 # Use the most modern vi-style editor we can find
