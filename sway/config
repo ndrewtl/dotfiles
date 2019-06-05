@@ -42,6 +42,7 @@ bindsym XF86MonBrightnessDown exec light -U 1
 
 # Start variety, if it is installed
 exec_always 'variety -n'
+exec_always 'mako'
 
 # Lock after 8 minutes,
 # Sleep after 10,
