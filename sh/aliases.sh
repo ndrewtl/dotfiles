@@ -16,19 +16,13 @@ alias q=exit
 alias sp='sudo pacman'
 alias q=exit
 alias mkdirp='mkdir -p'
+alias l=exa
+
 # Jump to project root
 alias cdr='cd $(git rev-parse --show-toplevel)'
 
 # Use colors for these things
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  alias ls='ls -G'      # mac:   BSD userland
-elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
-  alias ls='ls --color' # linux: GNU coreutils
-fi
-alias less='less -R'
-alias tree='tree -C'
 alias ssh-login='eval `ssh-agent` && ssh-add'
-alias open=xdg-open
 alias pw=$PASSWORD_MANAGER
 # kopy secret
 alias ks='$PASSWORD_MANAGER --clip'
