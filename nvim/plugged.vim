@@ -36,6 +36,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Languages
   Plug 'leafgarland/typescript-vim'
   Plug 'kchmck/vim-coffee-script'
+  Plug 'cespare/vim-toml'
 
   " Trim files
   Plug 'koryschneider/vim-trim'
