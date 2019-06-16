@@ -2,24 +2,14 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-  " Make vim word motions better
+  " Essentials
   Plug 'chaoren/vim-wordmotion'
   let g:wordmotion_prefix = ''
-
-  " .editorconfig support
   Plug 'editorconfig/editorconfig-vim'
-
-  " gc<motion> for comment
   Plug 'tomtom/tcomment_vim'
-
-  " surround thing with other things
   Plug 'tpope/vim-surround'
-
-  " FZF file navigation
   Plug '/usr/bin/fzf'
   Plug 'junegunn/fzf.vim'
-
-  " Linting
   Plug 'w0rp/ale'
 
   " Airline -> status bar
@@ -37,12 +27,6 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'leafgarland/typescript-vim'
   Plug 'kchmck/vim-coffee-script'
   Plug 'cespare/vim-toml'
-
-  " Trim files
-  Plug 'koryschneider/vim-trim'
-
-  " " LaTeX
-  " Plug 'vim-latex/vim-latex'
   Plug 'lervag/vimtex'
 
   " Colorscheme
