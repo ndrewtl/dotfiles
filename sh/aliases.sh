@@ -16,7 +16,7 @@ alias q=exit
 alias sp='sudo pacman'
 alias q=exit
 alias mkdirp='mkdir -p'
-alias l=exa
+alias ls=exa
 
 # Jump to project root
 alias cdr='cd $(git rev-parse --show-toplevel)'
