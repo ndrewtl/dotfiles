@@ -44,6 +44,7 @@ let mapleader = ","
 
   " use FZF for exploring files
   nmap <Leader>f :GFiles<Enter>
+  nmap <Leader>F :Files<Enter>
 
   " Make Y behave like C and D
   nmap Y y$
