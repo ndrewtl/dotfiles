@@ -12,6 +12,9 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'junegunn/fzf.vim'
   Plug 'w0rp/ale'
 
+  " Currently trying out
+  Plug 'sbdchd/neoformat'
+
   " Airline -> status bar
   " TODO implement your own status bar
   Plug 'vim-airline/vim-airline'
