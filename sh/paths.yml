@@ -1,0 +1,6 @@
+paths:
+  - $HOME/.bin
+  - $HOME/.cargo/bin
+  - $HOME/.yarn/bin
+  - $HOME/.ghcup/bin
+  - $HOME/.cabal/bin
