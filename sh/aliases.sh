@@ -2,7 +2,7 @@
 alias reload='exec $SHELL'
 
 # shorten expressvpn service
-alias vpn=expressvpn
+alias vpn=$VPN
 
 # Honestly these two always get mixed up in my head
 alias pgp=gpg
