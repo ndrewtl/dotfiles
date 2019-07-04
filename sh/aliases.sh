@@ -16,7 +16,8 @@ alias q=exit
 alias sp='sudo pacman'
 alias q=exit
 alias mkdirp='mkdir -p'
-alias l=exa
+alias l='\ls'
+alias ls=exa
 alias la='exa --all'
 alias ll='exa --long'
 
