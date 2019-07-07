@@ -14,6 +14,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   " Currently trying out
   Plug 'sbdchd/neoformat'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " Airline -> status bar
   " TODO implement your own status bar
