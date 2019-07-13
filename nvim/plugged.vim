@@ -10,11 +10,11 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'tpope/vim-surround'
   Plug '/usr/bin/fzf'
   Plug 'junegunn/fzf.vim'
-  Plug 'w0rp/ale'
 
   " Currently trying out
   Plug 'sbdchd/neoformat'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'prabirshrestha/async.vim'
+  Plug 'prabirshrestha/vim-lsp'
 
   " Airline -> status bar
   " TODO implement your own status bar
