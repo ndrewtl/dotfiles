@@ -3,18 +3,6 @@ source $HOME/.config/nvim/plugged.vim
 source mappings.vim
 source theming.vim
 
-
-" Disable Scrolling
-set mouse=nvi
-map <ScrollWheelUp> <nop>
-map <ScrollWheelDown> <nop>
-
-" Tabs
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set smartindent
-
 "Completions
 if executable('rls')
     au User lsp_setup call lsp#register_server({
