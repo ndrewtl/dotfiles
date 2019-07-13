@@ -15,6 +15,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'sbdchd/neoformat'
   Plug 'prabirshrestha/async.vim'
   Plug 'prabirshrestha/vim-lsp'
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
   " Airline -> status bar
   " TODO implement your own status bar
