@@ -1,19 +1,10 @@
-" Load plugins
-source $HOME/.config/nvim/plugged.vim
-source mappings.vim
-source theming.vim
+" Get current directory
+let g:dir = expand('<sfile>:h')
+" Load related configurations
+execute 'source' g:dir . '/plugged.vim'
+execute 'source' g:dir . '/mappings.vim'
+execute 'source' g:dir . '/theming.vim'
+execute 'source' g:dir . '/completions.vim'
 
-"Completions
-if executable('rls')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'rls',
-        \ 'cmd': {server_info->['rustup', 'run', 'stable', 'rls']},
-        \ 'workspace_config': {'rust': {'clippy_preference': 'on'}},
-        \ 'whitelist': ['rust'],
-        \ })
-endif
-
-" Folding
-" set foldmethod=indent
 " Automatically copy what I yank in vim
 set clipboard=unnamed
