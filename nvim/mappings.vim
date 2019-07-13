@@ -16,8 +16,13 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 
 " use FZF for exploring files
-nmap <Leader>f :GFiles<Enter>
-nmap <Leader>F :Files<Enter>
+" Mnemonic is j for 'jump to another file'
+nmap <Leader>j :GFiles<Enter>
+nmap <Leader>J :Files<Enter>
+
+nmap <Leader>d :LspDefinition<Enter>
+nmap <Leader>D :LspDeclaration<Enter>
+
 
 " Make Y behave like C and D
 nmap Y y$
