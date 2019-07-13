@@ -1,19 +1,8 @@
 " Load plugins
 source $HOME/.config/nvim/plugged.vim
 source mappings.vim
+source theming.vim
 
-" Line numbers
-set number
-
-set t_Co=256
-set background=dark
-colorscheme PaperColor
-
-" line wrapping off
-set nowrap
-
-" Text width
-set textwidth=80
 
 " Disable Scrolling
 set mouse=nvi
