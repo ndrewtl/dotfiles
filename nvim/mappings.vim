@@ -10,6 +10,10 @@ nmap <Leader>q :quit<Enter>
 nmap <Leader>q :quit<Enter>
 nmap q :quit<Enter>
 
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"<Paste>
+
 " use FZF for exploring files
 nmap <Leader>f :GFiles<Enter>
 nmap <Leader>F :Files<Enter>
