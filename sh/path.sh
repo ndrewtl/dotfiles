@@ -9,4 +9,3 @@ CABAL_PATH=$HOME/.cabal/bin
 CARGO_PATH=$HOME/.cargo/bin
 # MYBINS_PATH goes first so we can override default commands if necessary
 export PATH=$MYBINS_PATH:$PATH:$CARGO_PATH:$CABAL_PATH:$GHCUP_PATH:$YARN_PATH
-
