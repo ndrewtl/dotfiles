@@ -1,4 +1,5 @@
-"Completions
+" Language servers to interface with
+
 if executable('rls')
     au User lsp_setup call lsp#register_server({
         \ 'name': 'rls',
@@ -14,5 +15,13 @@ if executable('solargraph')
         \ 'cmd': {server_info->[&shell, &shellcmdflag, 'solargraph stdio']},
         \ 'initialization_options': {"diagnostics": "true"},
         \ 'whitelist': ['ruby'],
+        \ })
+endif
+
+if executable('clangd')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'clangd',
+        \ 'cmd': {server_info->['clangd', '-background-index']},
+        \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
         \ })
 endif
