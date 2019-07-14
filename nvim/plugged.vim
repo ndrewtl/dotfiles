@@ -11,8 +11,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug '/usr/bin/fzf'
   Plug 'junegunn/fzf.vim'
 
-  " Currently trying out
-  Plug 'sbdchd/neoformat'
+  " Language servers and completions
   Plug 'prabirshrestha/async.vim'
   Plug 'prabirshrestha/vim-lsp'
   Plug 'prabirshrestha/asyncomplete.vim'
