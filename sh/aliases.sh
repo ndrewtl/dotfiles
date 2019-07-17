@@ -10,6 +10,7 @@ alias pgp=gpg
 # Shorten things I do a lot
 alias e=$EDITOR
 alias E='$EDITOR "$(git ls-files | fzf)"'
+alias EE='$EDITOR "$(git ls-files --modified | fzf)"'
 alias se=sudoedit
 alias p=pacman
 alias q=exit
