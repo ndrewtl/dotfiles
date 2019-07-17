@@ -7,7 +7,6 @@ nmap <A-Space> :write<Enter>
 
 " Quitting
 nmap <Leader>q :quit<Enter>
-nmap <Leader>q :quit<Enter>
 nmap q :quit<Enter>
 
 " Completions
