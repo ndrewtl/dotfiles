@@ -11,6 +11,9 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug '/usr/bin/fzf'
   Plug 'junegunn/fzf.vim'
 
+  " Trying this out
+  Plug 'tpope/vim-fugitive'
+
   " Language servers and completions
   Plug 'prabirshrestha/async.vim'
   Plug 'prabirshrestha/vim-lsp'
