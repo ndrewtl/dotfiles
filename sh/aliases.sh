@@ -21,6 +21,11 @@ alias ls='\ls'
 alias l=exa
 alias la='exa --all'
 alias ll='exa --long'
+# print first line
+alias first='head -n1'
+# print ansi qr code of stdin
+alias pqr='qrencode -t ansi -o -'
+alias rand='gpg  --armor --gen-random 2 12'
 
 # Jump to project root
 alias cdr='cd $(git rev-parse --show-toplevel)'
