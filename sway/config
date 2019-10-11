@@ -90,6 +90,9 @@ bindsym $mod+n exec "variety -n"
     bindsym $mod+b exec $BROWSER
     bindsym $mod+Shift+b exec $BROWSER2
 
+    # screenshot -- mimic apple cmd+shift+4 screenshot
+    bindsym $mod+Shift+4 exec 'slurp | grim -g - "$TMPDIR/Screenshot on $(date).png"'
+
     # kill focused window
     bindsym $mod+w kill
 
