@@ -51,3 +51,6 @@ vmap <A-Space> <Esc>
 map <ScrollWheelUp> <nop>
 map <ScrollWheelDown> <nop>
 
+" make
+map <Leader>m :!make<Enter>
+
