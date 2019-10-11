@@ -27,6 +27,9 @@ alias first='head -n1'
 alias pqr='qrencode -t ansi -o -'
 alias rand='gpg  --armor --gen-random 2 12'
 
+# sway: take a screenshot with slurp and grim, print to stdout
+alias screenshot='slurp | grim -g - -'
+
 # Jump to project root
 alias cdr='cd $(git rev-parse --show-toplevel)'
 
@@ -38,3 +41,5 @@ alias ks='$PASSWORD_MANAGER --clip'
 
 # For mac: brew cask
 alias cask='brew cask'
+
+alias start-gnome='XDG_SESSION_TYPE=wayland exec dbus-run-session gnome-session'
