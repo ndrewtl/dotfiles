@@ -21,8 +21,10 @@ alias ls='\ls'
 alias l=exa
 alias la='exa --all'
 alias ll='exa --long'
+
 # print first line
 alias first='head -n1'
+
 # print ansi qr code of stdin
 alias pqr='qrencode -t ansi -o -'
 alias rand='gpg  --armor --gen-random 2 12'
@@ -36,8 +38,11 @@ alias cdr='cd $(git rev-parse --show-toplevel)'
 # Use colors for these things
 alias ssh-login='eval `ssh-agent` && ssh-add'
 alias pw=$PASSWORD_MANAGER
+
 # kopy secret
 alias ks='$PASSWORD_MANAGER --clip'
+
+alias fp=flatpak
 
 # For mac: brew cask
 alias cask='brew cask'
