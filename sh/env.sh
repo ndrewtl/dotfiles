@@ -7,5 +7,8 @@ export TMPDIR=$HOME/tmp
 export XKB_DEFAULT_LAYOUT=us
 export XKB_DEFAULT_OPTIONS=caps:swapescape # swap capslock and esc keys
 
+# Put go directories in data path
+export GOPATH=$XDG_DATA_HOME/go
+
 # use vi for line editing
 set -o vi
