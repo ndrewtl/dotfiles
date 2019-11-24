@@ -51,3 +51,9 @@ alias fp=flatpak
 alias cask='brew cask'
 
 alias start-gnome='XDG_SESSION_TYPE=wayland exec dbus-run-session gnome-session'
+
+# Update all things
+function ug() {
+  sudo dnf update
+  sudo pacman -Sydd
+}
