@@ -50,7 +50,18 @@ alias fp=flatpak
 # For mac: brew cask
 alias cask='brew cask'
 
+# launch GNOME
 alias start-gnome='XDG_SESSION_TYPE=wayland exec dbus-run-session gnome-session'
+
+# Keep awake -- only works on systemd systems. This alias serves to smooth the
+# transition from macOS 'caffeinate' command
+
+# Pass a program to run
+alias caffeinate='systemd-inhibit'
+# Pass a time to wait
+alias caffeinate-for='systemd-inhibit sleep'
+# Pass nothing-- stay awake forever
+alias caffeinate-forever='systemd-inhibit sleep infinity'
 
 # Update all things
 function ug() {
