@@ -66,5 +66,6 @@ alias caffeinate-forever='systemd-inhibit sleep infinity'
 # Update all things
 function ug() {
   sudo dnf update
-  sudo pacman -Sydd
+  sudo pacman -Syudd
+  flatpak update
 }
