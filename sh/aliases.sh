@@ -44,7 +44,7 @@ alias ssh-login='eval `ssh-agent` && ssh-add'
 alias pw='gopass --yes'
 
 # kopy secret
-alias ks='$PASSWORD_MANAGER --clip'
+alias ks='gopass --clip'
 
 alias fp=flatpak
 
