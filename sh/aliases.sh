@@ -40,7 +40,8 @@ alias cdr='cd $(git rev-parse --show-toplevel)'
 
 # Use colors for these things
 alias ssh-login='eval `ssh-agent` && ssh-add'
-alias pw=$PASSWORD_MANAGER
+# Password manager is gopass, assume yes on all questions
+alias pw='gopass --yes'
 
 # kopy secret
 alias ks='$PASSWORD_MANAGER --clip'
