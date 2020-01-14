@@ -9,7 +9,6 @@ export BROWSER=firefox
 export BROWSER2=chromium
 export LAUNCHER='rofi -show run'
 export TERMINAL=alacritty
-export VPN=expressvpn
 
 # Use the most modern vi-style editor we can find
 if  command_exists nvim; then
