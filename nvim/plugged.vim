@@ -11,17 +11,10 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug '/usr/bin/fzf'
   Plug 'junegunn/fzf.vim'
 
-  " Trying this out
-  Plug 'tpope/vim-fugitive'
-
-  " Language servers and completions
-  Plug 'prabirshrestha/async.vim'
-  Plug 'prabirshrestha/vim-lsp'
-  Plug 'prabirshrestha/asyncomplete.vim'
-  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  " Language-Server support
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " Airline -> status bar
-  " TODO implement your own status bar
   Plug 'vim-airline/vim-airline'
   " Use powerline separators
   let g:airline_left_sep = ''
@@ -39,8 +32,5 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   " Colorscheme
   Plug 'NLKNguyen/papercolor-theme'
-
-  " Misc
-  Plug 'koryschneider/vim-trim'
 
 call plug#end()
