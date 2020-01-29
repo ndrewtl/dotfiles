@@ -61,6 +61,9 @@ alias caffeinate-for='systemd-inhibit sleep'
 # Pass nothing-- stay awake forever
 alias caffeinate-forever='systemd-inhibit sleep infinity'
 
+# Ensure tmux finds the config file in the .config directory
+alias tmux='tmux -f ~/.config/tmux/tmux.conf'
+
 # Update all things
 function ug() {
   sudo dnf update
