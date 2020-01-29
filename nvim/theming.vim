@@ -9,4 +9,4 @@ colorscheme PaperColor
 set nowrap
 
 " Text width
-set textwidth=80
+set textwidth=98
