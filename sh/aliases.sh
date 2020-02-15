@@ -64,6 +64,9 @@ alias caffeinate-forever='systemd-inhibit sleep infinity'
 # Ensure tmux finds the config file in the .config directory
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 
+# Unscrew the computer's clock
+alias synctime="sudo ntpdate pool.ntp.org"
+
 # Update all things
 function ug() {
   sudo dnf update
