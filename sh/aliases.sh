@@ -37,11 +37,15 @@ alias cdr='cd $(git rev-parse --show-toplevel)'
 
 # Use colors for these things
 alias ssh-login='eval `ssh-agent` && ssh-add'
-# Password manager is gopass, assume yes on all questions
-alias pw='gopass --yes'
 
-# kopy secret
-alias ks='gopass --clip'
+# Edit password
+alias pwe='pass edit $(find $HOME/.password-store | sed s/^.*\.password-store\\/// | sed s/\.gpg$// | fzf)'
+
+# Show passwod
+alias pws='pass show --clip $(find $HOME/.password-store | sed s/^.*\.password-store\\/// | sed s/\.gpg$// | fzf)'
+
+# Copy password
+alias pwc='pass show --clip $(find $HOME/.password-store | sed s/^.*\.password-store\\/// | sed s/\.gpg$// | fzf)'
 
 alias fp=flatpak
 
