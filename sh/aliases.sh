@@ -39,13 +39,13 @@ alias cdr='cd $(git rev-parse --show-toplevel)'
 alias ssh-login='eval `ssh-agent` && ssh-add'
 
 # Edit password
-alias pwe='pass edit $(find $HOME/.password-store | sed s/^.*\.password-store\\/// | sed s/\.gpg$// | fzf)'
+alias pwe='pass edit $(find $HOME/.password-store | sed "s/^.*\.password-store\\///" | sed "s/\.gpg$//" | fzf)'
 
 # Show passwod
-alias pws='pass show --clip $(find $HOME/.password-store | sed s/^.*\.password-store\\/// | sed s/\.gpg$// | fzf)'
+alias pws='pass show $(find $HOME/.password-store | sed "s/^.*\.password-store\\///" | sed "s/\.gpg$//" | fzf)'
 
 # Copy password
-alias pwc='pass show --clip $(find $HOME/.password-store | sed s/^.*\.password-store\\/// | sed s/\.gpg$// | fzf)'
+alias pwc='pass show --clip $(find $HOME/.password-store | sed "s/^.*\.password-store\\///" | sed "s/\.gpg$//" | fzf)'
 
 alias fp=flatpak
 
@@ -70,6 +70,9 @@ alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 
 # Unscrew the computer's clock
 alias synctime="sudo ntpdate pool.ntp.org"
+
+# Get a random word
+alias word='shuf -n 1 /usr/share/dict/words'
 
 # Update all things
 function ug() {
